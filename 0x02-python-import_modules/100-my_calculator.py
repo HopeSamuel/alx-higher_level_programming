@@ -10,7 +10,7 @@ if len(sys.argv) - 1 != 3:
     sys.exit(1)
     ops = {"+": add, "-": sub, "*": mul, "/": div}
     if sys.argv[2] not in list(ops.keys()):
-        print("Unknown operator.Available operators: +, -, * and /") 
+        print("Unknown operator.Available operators: +, -, * and /")
 
         sys.exit(1)
         a = int(sys.argv[1])
