@@ -8,4 +8,4 @@ A function that replaces or adds
                     """
 a_dictionary[key] = value
 
-:ctest return a_dictionary 	
+:ctest return a_dictionary
