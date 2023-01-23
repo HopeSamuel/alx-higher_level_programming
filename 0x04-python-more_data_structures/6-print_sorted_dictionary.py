@@ -1,11 +1,7 @@
 #!/usr/bin/python3
 
 
-def print_sorted_dictionarlwy(a_dictionary):
-    """
-    A function that prints a dictionary by ordered keys
-    """
-    keys = list(a_dictionary.keys())
-    keys.sort()
-    for key in keys:
-     print("{}: {}".format(key, a_dictionary[key]))
+def print_sorted_dictionary (my_dict):
+    for key in sorted(my_dict.keys()):
+        print("{:s}: {}".format(key, my_dict[key]))
+
