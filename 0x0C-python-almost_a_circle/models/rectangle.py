@@ -26,7 +26,7 @@ class Rectangle(Base):
         self.y = y
         super().__init__(id)
 
-@property
+    @property
     def width(self):
         """Set/get the width of the Rectangle."""
         return self.__width
@@ -64,7 +64,7 @@ class Rectangle(Base):
         if value < 0:
             raise ValueError("x must be >= 0")
         self.__x = value
-@property
+    @property
     def y(self):
         """Set/get the y coordinate of the Rectangle."""
         return self.__y
@@ -104,7 +104,7 @@ class Rectangle(Base):
                 - 5th argument represents y attribute
             **kwargs (dict): New key/value pairs of attributes.
         """
-if args and len(args) != 0:
+        if args and len(args) != 0:
             a = 0
             for arg in args:
                 if a == 0:
@@ -154,4 +154,4 @@ if args and len(args) != 0:
                                                        self.x, self.y,
 
                       
-self.width, self.height)
+                                                       self.width, self.height)
