@@ -1,6 +1,9 @@
-
 #!/usr/bin/python3
-def search_replace(my_list, search, replace):
-    def s_r_elm(elm):
-        return (elm if elm != search else replace)
-    return list(map(s_r_elm, my_list)) I
+def best_score(my_dict):
+    if my_dict and len(my_dict):
+        max = list(my_dict.keys())[0]
+        for key in my_dict:
+            if my_dict[key] > my_dict[max]:
+                max = key
+        return max
+    return None
