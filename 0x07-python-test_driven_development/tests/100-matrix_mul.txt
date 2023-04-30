@@ -1,14 +1,13 @@
-
 ============================
 How to Use 100-matrix_mul.py
 ============================
 
-This module defines a matrix multiplication function ``matrix_mul(m_a, m_b)``.
+This module defines a matrix multiplication function `matrix_mul(m_a, m_b)`.
 
 Usage
 =====
-``matrix_mul(...)`` returns a new matrix representing the multiplication of
-``m_a`` by ``m_b``.
+`matrix_mul(...)` returns a new matrix representing the multiplication of
+`m_a` by `m_b`.
 
 ::
 
@@ -70,21 +69,21 @@ A minimum of two arguments must be provided. Otherwise, a TypeError is raised.
 
     >>> print(matrix_mul()) # doctest: +NORMALIZE_WHITESPACE
     Traceback (most recent call last):
-    TypeError: matrix_mul() missing 2 required positional arguments: 
+    TypeError: matrix_mul() missing 2 required positional arguments:
     'm_a' and 'm_b'
 
 ::
 
     >>> print(matrix_mul()) # doctest: +NORMALIZE_WHITESPACE
     Traceback (most recent call last):
-    TypeError: matrix_mul() missing 2 required positional arguments: 
+    TypeError: matrix_mul() missing 2 required positional arguments:
     'm_a' and 'm_b'
 
 ValueErrors
 ===========
 
-If two matrices cannot be multiplied (ie. the row count of ``m_a`` is not
-equal to the column count in ``m_b``), a ValueError is raised.
+If two matrices cannot be multiplied (ie. the row count of `m_a` is not
+equal to the column count in `m_b`), a ValueError is raised.
 
 ::
 
@@ -102,7 +101,7 @@ equal to the column count in ``m_b``), a ValueError is raised.
     ValueError: m_a and m_b can't be multiplied
 
 
-The parameters ``m_a`` and ``m_b`` cannot be empty. Otherwise, a ValueError
+The parameters `m_a` and `m_b` cannot be empty. Otherwise, a ValueError
 is raised.
 
 ::
@@ -126,7 +125,7 @@ is raised.
 Invalid Matrices
 ================
 
-The parameters ``m_a`` and ``m_b`` must be lists. If either parameter is
+The parameters `m_a` and `m_b` must be lists. If either parameter is
 not a list, a TypeError is raised.
 
 ::
@@ -194,7 +193,7 @@ integers or floats!
     Traceback (most recent call last):
     TypeError: m_a should contain only integers or floats
 
-Finally, the length of all rows in matrices ``m_a`` and ``m_b`` should be
+Finally, the length of all rows in matrices `m_a` and `m_b` should be
 equivalent. Otherwise, a TypeError is raised.
 
 ::
