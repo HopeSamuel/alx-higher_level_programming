@@ -1,8 +1,21 @@
 #!/usr/bin/python3
-"""Defines a text file-reading function."""
+""" 0-main """
+from models.base import Base
 
+if __name__ == "__main__":
 
-def read_file(filename=""):
-    """Print the contents of a UTF8 text file to stdout."""
-    with open(filename, encoding="utf-8") as f:
-        print(f.read(), end="")
+    b1 = Base()
+    print(b1.id)
+
+    b2 = Base()
+    print(b2.id)
+
+    b3 = Base()
+    print(b3.id)
+
+    b4 = Base(12)
+    print(b4.id)
+
+    b5 = Base()
+    print(b5.id)
+
